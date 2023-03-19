@@ -1,8 +1,3 @@
-//
-// Source code recreated from a .class file by IntelliJ IDEA
-// (powered by FernFlower decompiler)
-//
-
 package com.github.jessejes.blog.discord.util;
 
 import com.github.jessejes.blog.discord.models.Config;
@@ -24,8 +19,8 @@ public final class ConfigManager {
 
             return GSON.fromJson(reader, Config.class);
 
-        } catch (IOException var7) {
-            throw new RuntimeException(var7);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
         }
     }
 }

@@ -1,4 +1,4 @@
-package com.github.jessejes.blog.discord.util;
+package com.github.jessejes.blog.discord.util.config;
 
 import com.github.jessejes.blog.discord.models.Config;
 import com.github.jessejes.blog.discord.models.ConfigPersistenceDto;

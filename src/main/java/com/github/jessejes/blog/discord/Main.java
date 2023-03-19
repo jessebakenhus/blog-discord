@@ -1,8 +1,8 @@
 package com.github.jessejes.blog.discord;
 
 import com.github.jessejes.blog.discord.models.Config;
-import com.github.jessejes.blog.discord.util.ConfigManager;
-import com.github.jessejes.blog.discord.util.EmbedManager;
+import com.github.jessejes.blog.discord.util.config.ConfigManager;
+import com.github.jessejes.blog.discord.util.discord4j.EmbedManager;
 import com.github.jessejes.blog.discord.util.TokenManager;
 import discord4j.core.DiscordClientBuilder;
 import discord4j.core.GatewayDiscordClient;

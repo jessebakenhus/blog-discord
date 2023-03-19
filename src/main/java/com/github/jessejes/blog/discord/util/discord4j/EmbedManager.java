@@ -1,4 +1,4 @@
-package com.github.jessejes.blog.discord.util;
+package com.github.jessejes.blog.discord.util.discord4j;
 
 import discord4j.core.spec.EmbedCreateSpec;
 import discord4j.rest.util.Color;

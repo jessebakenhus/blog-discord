@@ -1,23 +1,29 @@
 package com.github.jessejes.blog.discord.util;
 
 import com.github.jessejes.blog.discord.models.Config;
+import com.github.jessejes.blog.discord.models.ConfigPersistenceDto;
 import com.google.gson.Gson;
+import lombok.experimental.UtilityClass;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.Reader;
 
-public final class ConfigManager {
-    private static final Gson GSON = new Gson();
+@UtilityClass
+public class ConfigManager {
+    private final Gson GSON = new Gson();
 
-    public static Config loadConfig() {
+    public Config loadConfig() {
 
         ClassLoader classLoader = ConfigManager.class.getClassLoader();
         InputStream inputStream = classLoader.getResourceAsStream("config.json");
 
         try(Reader reader = new InputStreamReader(inputStream)) {
 
-            return GSON.fromJson(reader, Config.class);
+            ConfigPersistenceDto persistenceDto = GSON.fromJson(reader, ConfigPersistenceDto.class);
+
+            return ConfigPersistenceDtoConverter.fromDto(persistenceDto);
 
         } catch (IOException e) {
             throw new RuntimeException(e);

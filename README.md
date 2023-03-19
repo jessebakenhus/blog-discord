@@ -1,1 +1,1 @@
-# blog-discord-bot
+# blog-discord

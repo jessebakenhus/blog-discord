@@ -5,7 +5,12 @@ import lombok.Value;
 
 @Value
 @Builder
-public class ConfigPersistenceDto {
+public class SettingsPersistenceDto {
 
     String notifyChannelId;
+
+    AuthorPersistenceDto author;
+
+    String content;
+
 }

@@ -2,10 +2,7 @@ package com.github.jessejes.blog.discord.models;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.github.jessejes.blog.discord.util.discord4j.EmbedManager;
-import discord4j.core.spec.EmbedCreateSpec;
 import lombok.Getter;
-import lombok.Value;
 
 public class Blog {
 

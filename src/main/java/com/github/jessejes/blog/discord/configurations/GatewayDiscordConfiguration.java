@@ -1,4 +1,4 @@
-package com.github.jessejes.blog.discord;
+package com.github.jessejes.blog.discord.configurations;
 
 import discord4j.core.DiscordClientBuilder;
 import discord4j.core.GatewayDiscordClient;

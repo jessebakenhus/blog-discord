@@ -1,8 +1,6 @@
-<div style="text-align: center">
+<div align="center">
     <h1>blog discord bot 🤖</h1>
 </div>
-
----
 
 ## Usage
 

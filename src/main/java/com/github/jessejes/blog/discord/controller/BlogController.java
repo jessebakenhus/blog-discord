@@ -24,7 +24,7 @@ public class BlogController {
     @Autowired
     Settings settings;
 
-    @PostMapping("/blog")
+    @PostMapping("/notify")
     public void postBlog(@RequestBody Blog blog) {
 
         Author author = settings.getAuthor();

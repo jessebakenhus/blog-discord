@@ -19,7 +19,7 @@ mvn spring-boot:run
 
 ### Send a notification
 ```sh
- curl -X POST localhost:8080/notify -H 'Content-type:application/json' -d '{"title": "Test","description": "Test","url": "https://google.com"}'
+ curl -X POST localhost:8080/notify -H 'Content-type:application/json' -H 'API-Key: {API_TOKEN}' -d '{"title": "Test","description": "Test","url": "https://google.com"}'
 ```
 
 ## Project structure

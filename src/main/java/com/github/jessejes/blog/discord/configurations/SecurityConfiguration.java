@@ -19,10 +19,9 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
 
         Map<String, String> getenv = System.getenv();
-        String key = getenv.get("API_KEY");
-        String value = getenv.get("API_VALUE");
+        String value = getenv.get("API_TOKEN");
 
-        ApiFilter filter = new ApiFilter(key);
+        ApiFilter filter = new ApiFilter("API-Key");
         filter.setAuthenticationManager(new ApiAuthenticationManager(value));
 
         http.csrf().

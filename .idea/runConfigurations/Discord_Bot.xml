@@ -1,0 +1,19 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Discord Bot" type="Application" factoryName="Application">
+    <envs>
+      <env name="API_TOKEN" value="c1z5wrAthlbReYltriqu3lFithld0l6a" />
+      <env name="DISCORD_TOKEN" value="MTA4Njk3Njk1MDkyMjM4NzQ2Ng.G9bRsk.layFlMWlTEy6Yuv8Y8-nOgpkgzDBtkYP8vzic4" />
+    </envs>
+    <option name="MAIN_CLASS_NAME" value="com.github.jessejes.blog.discord.Application" />
+    <module name="blog-discord" />
+    <extension name="coverage">
+      <pattern>
+        <option name="PATTERN" value="com.github.jessejes.blog.discord.security.*" />
+        <option name="ENABLED" value="true" />
+      </pattern>
+    </extension>
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
